@@ -34,17 +34,12 @@ app.get('/api/secure', function (req, res) {
     res.json(moviearr);
 });
 
+
+
 app.delete('/api/secure/:name', (req, res) => {
-        // console.log(moviearr[0].name);
         console.log(res.name)
-        for(i=0;i<moviearr.length;){
-            // console.log(req)
-            if(moviearr[i].name == req.name){
-                delete moviearr[i];
-            }
-            else {
-                i++
-            }
+        for(i=0;i<moviearr.length; i++){
+            moviearr.pop();
         }
     // console.log(moviearr);
     res.send(moviearr);

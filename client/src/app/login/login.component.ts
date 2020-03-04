@@ -27,9 +27,10 @@ export class LoginComponent implements OnInit {
       };
     }
     else{
-alert('אינך מורשה')
+alert('You are unauthorized');
     }
   };
+ 
   
 
 };

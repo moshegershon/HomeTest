@@ -12,6 +12,7 @@ import { Movie } from '../movie';
 export class MoviesComponent implements OnInit {
   @Input()
   movies: Movie[];
+  user: User;
   constructor(private serviceService: ServiceService , private router: Router) {
   }
   ngOnInit() {
