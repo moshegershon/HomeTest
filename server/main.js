@@ -1,9 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-// const Product = require('./movie.model');
-// const mongoose = require('mongoose');
-// mongoose.set('useCreateIndex', true);
+
 
 
 
@@ -14,7 +12,7 @@ app.use(bodyParser());
 const PORT = 6789;
 /* end config */
 
-// const movie ;
+
 var moviearr = [];
 
 app.post('/api/add', function (req, res) {
@@ -41,7 +39,6 @@ app.delete('/api/secure/:name', (req, res) => {
         for(i=0;i<moviearr.length; i++){
             moviearr.pop();
         }
-    // console.log(moviearr);
     res.send(moviearr);
 });
 
