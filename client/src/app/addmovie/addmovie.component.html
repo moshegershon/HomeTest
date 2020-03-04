@@ -1,0 +1,27 @@
+
+<form >
+    <label >
+        Name:
+        <input type="text" [(ngModel)]="movie.name" name="name">
+    </label>
+
+    <label>
+        Category:
+        <input type="text" [(ngModel)]="movie.category" name="category">
+    </label>
+
+    <label>
+        Link for photo
+        <input type="text" [(ngModel)]="movie.photo" name="photo">
+    </label>
+
+    <label >
+        Link to imdb 
+        <input type="url" [(ngModel)]="movie.imdb" name="imdb">
+    </label>
+
+    <button (click)="Add()" type="submit">
+        Add
+        
+    </button>
+</form>

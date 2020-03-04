@@ -1,0 +1,36 @@
+<div class="container" >
+    <div class="row">
+      <div *ngFor='let movie of movies' class="col">
+        <div class="movie">
+            
+            <button class="btn btn-secondary" (click)="delete(movie)">x</button>
+            <p>
+              Name: {{movie.name}}
+            </p>
+            <p>
+              Category: {{movie.category}}
+            </p>
+            <p>
+               {{movie.photo}}
+            </p>
+            <p>
+                Link to imdb :{{movie.imdb}}
+             </p>
+            <button class="btn btn-primary" (click)="addToCart(product)">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="float-right">
+    <div>
+<button (click)="GoToAdd()">
+Add movie
+</button>
+</div>
+<div>
+<button (click)="Exit()">
+    Exit
+</button>
+</div>
+</div>
