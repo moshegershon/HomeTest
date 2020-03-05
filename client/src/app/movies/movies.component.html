@@ -10,9 +10,7 @@
           <p>
             Category: {{movie.category}}
           </p>
-          <p>
-            {{movie.photo}}
-          </p>
+          <img src={{movie.photo}} class="float-right">
           <p>
             Link to imdb :{{movie.imdb}}
           </p>
@@ -24,17 +22,17 @@
 </div>
 
 <div class="float-right">
-    <div>
-      Hello Admin
-    </div>
   <div>
-      <button (click)="GoToAdd()">
-        Add movie
-      </button>
+    Hello Admin
   </div>
-      <div>
-      <button (click)="Exit()">
-        Exit
-      </button>
-    </div>
+  <div>
+    <button (click)="GoToAdd()">
+      Add movie
+    </button>
+  </div>
+  <div>
+    <button (click)="Exit()">
+      Exit
+    </button>
+  </div>
 </div>
